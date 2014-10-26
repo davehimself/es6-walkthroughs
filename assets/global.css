@@ -25,12 +25,12 @@ html, body {
   right: 0;
   bottom: 0;
   left: 0;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 #console {
   color: #2D8730;
-  font-size: 18px;
+  font-size: 14px;
   overflow: auto;
   background-color: #232323;
   padding: 10px;
@@ -316,8 +316,8 @@ header.main h2 p {
   cursor: default;
 }
 
-#toc td.good::before {
-  content: 'Yes';
+#toc td.native::before {
+  content: 'your browser';
 }
 
 #toc td.bad {
@@ -325,8 +325,12 @@ header.main h2 p {
   font-weight: 400;
 }
 
+#toc td.traceur::before {
+  content: 'traceur';
+}
+
 #toc td.bad::before {
-  content: 'No';
+  content: 'none';
 }
 
 footer {
